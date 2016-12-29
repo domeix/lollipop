@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \begin_preamble
 \usepackage{algpseudocode}
@@ -31,16 +33,16 @@ customHeadersFooters
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -416,6 +418,18 @@ newcommand{
 semester}{Sommersemester 2014}
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -444,7 +458,7 @@ blattnr
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -468,14 +482,14 @@ blattnr}
 \backslash
 fancyhead[LE,LO]{
 \backslash
-includegraphics[height=1.2cm]{fig/hsma}}
+includegraphics[height=1.2cm]{D:/Dominik/workspace/lollipop/lyx/fig/hsma.png}}
 \end_layout
 
 \begin_layout Plain Layout
 
 %
 \backslash
-fancyhead[LE,LO]{Foo} & geht! graphicx muss eingbundne sein!
+fancyhead[LE,LO]{Foo}  geht! graphicx muss eingbunden sein!
 \end_layout
 
 \begin_layout Plain Layout
@@ -614,7 +628,7 @@ Allgemeine Hinweise
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="30text%">
 <column alignment="left" valignment="top" width="70text%">
 <row>
@@ -787,7 +801,7 @@ Dynamische Datenstrukturen kennenlernen
 
 \begin_layout Itemize
 \begin_inset Branch listen-bäume
-status open
+status collapsed
 
 \begin_layout Standard
 Listen und Bäume vertiefen
@@ -1114,7 +1128,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="3text%">
@@ -1782,13 +1796,17 @@ begin{musterloesung}
 \begin_layout Standard
 B (Gegner) verliert, wenn nach einem Zug von A genau ein Holz liegen bleibt.
  Angenommen, B ist dran, dann hat er folgende Möglichkeiten, Hölzer zu nehmen:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2077,6 +2095,10 @@ A kann im Gegenzug immer so viele nehmen, dass die Summe 4 (allgemein
 \end_inset
 
 , wie folgende Überlegung zeigt:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2121,7 +2143,7 @@ end{musterloesung}
 \begin_layout Subsection
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Aufgabe:Nimmspiel-Alg"
+name "subsec:Aufgabe:Nimmspiel-Alg"
 
 \end_inset
 
@@ -2130,7 +2152,7 @@ Aufgabe: Struktogramm
 
 \begin_layout Standard
 Entwickeln Sie im Struktogramm einen Algorithmus für das Streichholz-Spiel,
- mit dem Spieler A -- wenn möglich -- gewinnt.
+ mit dem Spieler A – wenn möglich – gewinnt.
  Es soll nach der Stapelgröße zu Beginn gefragt werden.
  Anschließend ziehen Spieler A und B abwechselnd, wobei A stets beginnen
  darf.
@@ -2156,6 +2178,10 @@ begin{musterloesung}
 
 \begin_layout Standard
 Hinweis: Hier wird bei B eine Zufallszahl gezogen und nicht gefragt.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2192,7 +2218,7 @@ Aufgabe: Pseudo-Code
 Entwickeln Sie im Pseudo-Code den gleichen Algorithmus wie in 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Aufgabe:Nimmspiel-Alg"
+reference "subsec:Aufgabe:Nimmspiel-Alg"
 
 \end_inset
 
@@ -2728,13 +2754,17 @@ begin{musterloesung}
 
 \begin_layout Standard
 Der Verliererpfad lautet 1, 5, 9, 13, 17, 21 (fett):
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -3816,7 +3846,7 @@ eine Teilaufgabe gut erklärt.
 \end_layout
 
 \begin_layout Itemize
-grün: Alle Teilaufgaben gut erklärt.
+grün: Alle Teilaufgaben gut erklärt.hier Grafik
 \end_layout
 
 \begin_layout Standard
@@ -4088,9 +4118,10 @@ begin{musterloesung}
 \end_layout
 
 \begin_layout Standard
+BILD: 
 \begin_inset Graphics
-	filename fig/hsma.png
-	scale 75
+	filename fig/faki.png
+	scale 70
 
 \end_inset
 
@@ -4123,7 +4154,7 @@ Schreiben Sie hierfür ein lauffähiges Java-Programm.
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
