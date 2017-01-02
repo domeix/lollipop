@@ -184,7 +184,7 @@ customHeadersFooters
 \color #ffffff
 \end_branch
 \branch rekursion-vertiefen
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -244,7 +244,7 @@ customHeadersFooters
 \color #ffffff
 \end_branch
 \branch dyn-ds
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -309,7 +309,7 @@ customHeadersFooters
 \color #ffffff
 \end_branch
 \branch königreich
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -327,6 +327,11 @@ customHeadersFooters
 \selected 1
 \filename_suffix 0
 \color #ffffff
+\end_branch
+\branch Ostern
+\selected 1
+\filename_suffix 0
+\color #faf0e6
 \end_branch
 \index Index
 \shortcut idx
@@ -482,7 +487,7 @@ blattnr}
 \backslash
 fancyhead[LE,LO]{
 \backslash
-includegraphics[height=1.2cm]{D:/Dominik/workspace/lollipop/lyx/fig/hsma.png}}
+includegraphics[height=1.2cm]{C:/Daten/Lokal/workspace/lollipop/lyx/fig/hsma.png}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -821,7 +826,7 @@ Suchen und Sortieren verstehen.
 
 
 \begin_inset Branch grammatiken-verstehen
-status collapsed
+status open
 
 \begin_layout Standard
 Grammatiken verstehen und anwenden.
@@ -3796,7 +3801,7 @@ status open
 \end_layout
 
 \begin_layout Section
-Hilf dem Kaiser!
+König
 \end_layout
 
 \begin_layout Standard
@@ -4291,6 +4296,251 @@ end{musterloesung}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Ostern
+status open
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Berechnung des Osterdatums
+\end_layout
+
+\begin_layout Standard
+Ostern ist im Christentum die jährliche Gedächtnisfeier der Auferstehung
+ Jesu Christi, der nach dem Neuen Testament (NT) als Sohn Gottes den Tod
+ überwunden hat.
+ Da Jesu Tod und Auferstehung laut NT in eine Pessach-Woche fielen, bestimmt
+ der Termin dieses beweglichen jüdischen Hauptfestes auch das Osterdatum.
+ Es wird über einen Lunisolarkalender bestimmt und fällt in der Westkirche
+ immer auf den Sonntag nach dem ersten Frühlingsvollmond, im gregorianischen
+ Kalender also frühestens auf den 22.
+ März und spätestens auf den 25.
+ April.
+\end_layout
+
+\begin_layout Standard
+Für Berechnung des Osterdatums in den Jahren 1900 bis 2099 hat T.
+ O'Beirne folgenden Algorithmus entwickelt:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{algorithm}[H]
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{algorithmic}
+\end_layout
+
+\begin_layout Standard
+Ausgabe: 
+\begin_inset Quotes pld
+\end_inset
+
+Gib Jahreszahl ein
+\begin_inset Quotes prd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+Lies natürliche Zahl y ein;
+\end_layout
+
+\begin_layout Standard
+a:= (y-1900) mod 19;
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Gib aus: "Bitte Jahreszahl eingeben.";
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Lies natürliche Zahl $y$ ein;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State $a:=(y-1900) mod 19$;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State $b:=$ ganzzahliger Teil von $(7a+1)/19$;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State $m:=(11a+4-b) mod 29$;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State $q:=$ ganzzahliger Teil von $(y-1900)/4$;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State $w:= (y-1900 +q+31-m) mod 7$;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State $d:= 25-m-w$;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+If{$d>0$}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State Gib aus: "'Ostern ist am $d.$ April";
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Else
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $d2 = 31+d$;
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State Gib aus: "'Ostern ist am $d2.$ März";
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Pseudo-Code Berechnung des Osterdatums}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aufgabe: Ablaufprotokoll
+\end_layout
+
+\begin_layout Standard
+Erstellen Sie ein Ablaufprotokoll für die Jahre 1817, 1917, 2017 und 2117.
+ Was fällt Ihnen auf?
+\end_layout
+
+\begin_layout Subsection
+Aufgabe: Java-Programm
+\end_layout
+
+\begin_layout Standard
+Schreiben Sie das Java-Programm hierfür.
+ Fügen Sie eine sinnvolle Fehlerbehandlung hinzu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch heron-verfahren
+status collapsed
+
+\begin_layout Standard
+asdfasdf
 \end_layout
 
 \end_inset
