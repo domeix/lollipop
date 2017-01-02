@@ -144,7 +144,7 @@ customHeadersFooters
 \color #ffffff
 \end_branch
 \branch heron-verfahren
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -329,6 +329,11 @@ customHeadersFooters
 \color #ffffff
 \end_branch
 \branch Ostern
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Wurzelziehen
 \selected 1
 \filename_suffix 0
 \color #faf0e6
@@ -1068,7 +1073,7 @@ static
 
 \begin_layout Standard
 \begin_inset Branch klassenkopieren
-status open
+status collapsed
 
 \begin_layout Standard
 In diesem Arbeitsblatt sollen Sie Klassen entwerfen, die auf Klassen beruhen,
@@ -3791,7 +3796,7 @@ end{musterloesung}
 
 \begin_layout Standard
 \begin_inset Branch königreich
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -4159,7 +4164,7 @@ Schreiben Sie hierfür ein lauffähiges Java-Programm.
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -4329,45 +4334,25 @@ Ostern ist im Christentum die jährliche Gedächtnisfeier der Auferstehung
  Kalender also frühestens auf den 22.
  März und spätestens auf den 25.
  April.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnote{https://de.wikipedia.org/wiki/Ostern}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Für Berechnung des Osterdatums in den Jahren 1900 bis 2099 hat T.
+Für Berechnung des Datums des Ostersonntags in den Jahren 1900 bis 2099
+ hat T.
  O'Beirne folgenden Algorithmus entwickelt:
-\end_layout
-
-\begin_layout Verbatim
-
-
-\backslash
-begin{algorithm}[H]
-\end_layout
-
-\begin_layout Verbatim
-
-
-\backslash
-begin{algorithmic}
-\end_layout
-
-\begin_layout Standard
-Ausgabe: 
-\begin_inset Quotes pld
-\end_inset
-
-Gib Jahreszahl ein
-\begin_inset Quotes prd
-\end_inset
-
-;
-\end_layout
-
-\begin_layout Standard
-Lies natürliche Zahl y ein;
-\end_layout
-
-\begin_layout Standard
-a:= (y-1900) mod 19;
 \end_layout
 
 \begin_layout Standard
@@ -4455,7 +4440,7 @@ If{$d>0$}
 
 	
 \backslash
-State Gib aus: "'Ostern ist am $d.$ April";
+State Gib aus: "'Der Ostersonntag im Jahr $y$ ist am $d.$ April";
 \end_layout
 
 \begin_layout Plain Layout
@@ -4476,7 +4461,7 @@ State $d2 = 31+d$;
 
 	
 \backslash
-State Gib aus: "'Ostern ist am $d2.$ März";
+State Gib aus: "'Der Ostersonntag im Jahr $y$ ist am $d2.$ März";
 \end_layout
 
 \begin_layout Plain Layout
@@ -4507,6 +4492,13 @@ caption{Pseudo-Code Berechnung des Osterdatums}
 end{algorithm}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
 \end_inset
 
 
@@ -4517,8 +4509,534 @@ Aufgabe: Ablaufprotokoll
 \end_layout
 
 \begin_layout Standard
-Erstellen Sie ein Ablaufprotokoll für die Jahre 1817, 1917, 2017 und 2117.
+Erstellen Sie ein Ablaufprotokoll für die Jahre 1817, 1917, 2016, 2017.
  Was fällt Ihnen auf?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{musterloesung}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Ablaufprotokolle
+\end_layout
+
+\begin_layout Standard
+Ausgabe: "Bitte Jahreszahl eingeben."
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{5mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+y:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1817
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1917
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2017
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+m:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+q:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+w:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d2:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+–
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+–
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+–
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{5mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ausgabe: 
+\begin_inset Quotes pld
+\end_inset
+
+Der Ostersonntag im Jahr 1817 ist am 41.
+ April.
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ausgabe: 
+\begin_inset Quotes pld
+\end_inset
+
+Der Ostersonntag im Jahr 1917 ist am 8.
+ April.
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ausgabe: 
+\begin_inset Quotes pld
+\end_inset
+
+Der Ostersonntag im Jahr 2016 ist am 27.
+ März.
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ausgabe: 
+\begin_inset Quotes pld
+\end_inset
+
+Der Ostersonntag im Jahr 2017 ist am 16.
+ April.
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Was fällt auf?
+\end_layout
+
+\begin_layout Standard
+Das Jahr 1817 liegt außerhalb des Definitionsbereiches, daher ist die Lösung
+ 41.
+ April falsch.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{musterloesung}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -4530,17 +5048,443 @@ Schreiben Sie das Java-Programm hierfür.
  Fügen Sie eine sinnvolle Fehlerbehandlung hinzu.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{musterloesung}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=java,numbers=left,tabsize=4,showstringspaces=false,showspaces=fa
+lse}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch heron-verfahren
-status collapsed
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import java.util.Scanner;
+\end_layout
+
+\begin_layout Plain Layout
+
+public class easterdate {
+\end_layout
+
+\begin_layout Plain Layout
+
+    public static void main(String[] Args) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.out.println("Bitte geben Sie die Jahreszahl "+
+\end_layout
+
+\begin_layout Plain Layout
+
+            "zur Berechnung des Osterdatums ein:");
+\end_layout
+
+\begin_layout Plain Layout
+
+        Scanner sc = new Scanner(System.in);
+\end_layout
+
+\begin_layout Plain Layout
+
+        int y = sc.nextInt();
+\end_layout
+
+\begin_layout Plain Layout
+
+        sc.close();	
+\end_layout
+
+\begin_layout Plain Layout
+
+        if(y < 2100 && y >= 1900) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            int a = (y-1900)%19;
+\end_layout
+
+\begin_layout Plain Layout
+
+            int b = (7*a+1)/19;
+\end_layout
+
+\begin_layout Plain Layout
+
+            int m = (11*a+4-b)%29;
+\end_layout
+
+\begin_layout Plain Layout
+
+            int q = (y-1900)/4;
+\end_layout
+
+\begin_layout Plain Layout
+
+            int w = (y-1900+q+31-m)%7;
+\end_layout
+
+\begin_layout Plain Layout
+
+            int d = 25-m-w;
+\end_layout
+
+\begin_layout Plain Layout
+
+            if(d > 0) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                System.out.println("Der Ostersonntag im Jahr "
+\end_layout
+
+\begin_layout Plain Layout
+
+                    + y + " ist am " + d + ".
+ April.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                int d2 = 31+d;
+\end_layout
+
+\begin_layout Plain Layout
+
+                System.out.println("Der Ostersonntag im Jahr "
+\end_layout
+
+\begin_layout Plain Layout
+
+                    + y + " ist am " + d2 + ".
+ März.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.out.println("Fehlerhafte Eingabe.");
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Standard
-asdfasdf
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{musterloesung}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Wurzelziehen
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Rekursives Wurzelziehen
+\end_layout
+
+\begin_layout Standard
+Ein Quadrat mit dem Flächeninhalt 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A$
+\end_layout
+
+\end_inset
+
+ hat die Seitenlänge 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sqrt{A}$
+\end_layout
+
+\end_inset
+
+.
+ Aus dieser Tatsache leitet sich folgendes Annäherungsverfahren zum Wurzelziehen
+ her.
+ Man beginnt mit einem belibigen Rechteck des Flächeninhalts 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A$
+\end_layout
+
+\end_inset
+
+ und nähert Schritt für Schritt die Seitenlängen 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$a$ und $b$
+\end_layout
+
+\end_inset
+
+ aneinander an.
+ Das Verfahren bricht ab, wenn der Abstand von 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$a$ und $b$
+\end_layout
+
+\end_inset
+
+ ausreichend klein ist.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hier kann noch eine erläuternde Grafik eingefügt werden.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Rekursionsvorschrift des Verfahrens lautet:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{n+1}=\frac{1}{2}*(x_{n}\frac{a}{x_{n}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aufgabe: Pseudocode
+\end_layout
+
+\begin_layout Standard
+Erstellen Sie den Pseudocode zum oben erläuterten Verfahren.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{musterloesung}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State funct main
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State funct sqrtRek
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Pseudo-Code Wurzelziehen}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{musterloesung}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aufgabe: Java-Programm
+\end_layout
+
+\begin_layout Standard
+Überführen Sie den Pseudocode in ein lauffähiges Java-Programm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{musterloesung}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+blablabla
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{musterloesung}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

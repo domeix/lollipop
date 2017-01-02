@@ -15,10 +15,10 @@ public class easterdate {
 			int w = (y-1900+q+31-m)%7;
 			int d = 25-m-w;
 			if(d > 0) {
-				System.out.println("Ostersonntag im Jahr " + y + " am " + d + ". April.");
+				System.out.println("Der Ostersonntag im Jahr " + y + " ist am " + d + ". April.");
 			} else {
 				int d2 = 31+d;
-				System.out.println("Ostersonntag im Jahr " + y + " am " + d2 + ". März.");
+				System.out.println("Der Ostersonntag im Jahr " + y + " ist am " + d2 + ". März.");
 			}
 		} else {
 			System.out.println("Fehlerhafte Eingabe.");
