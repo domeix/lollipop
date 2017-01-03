@@ -337,7 +337,7 @@ customHeadersFooters
 \branch Wurzelziehen
 \selected 1
 \filename_suffix 0
-\color #ffffff
+\color #faf0e6
 \end_branch
 \index Index
 \shortcut idx
@@ -819,7 +819,7 @@ Lernziele
 
 \begin_layout Standard
 \begin_inset Branch dyn-ds
-status collapsed
+status open
 
 \begin_layout Standard
 Dynamische Datenstrukturen kennenlernen
@@ -832,7 +832,7 @@ Dynamische Datenstrukturen kennenlernen
 
 \begin_layout Itemize
 \begin_inset Branch listen-bäume
-status collapsed
+status open
 
 \begin_layout Standard
 Listen und Bäume vertiefen
@@ -1807,10 +1807,6 @@ caption{Pseudo-Code Berechnung des Osterdatums}
 
 \backslash
 end{algorithm}
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
