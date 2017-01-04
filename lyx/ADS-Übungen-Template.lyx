@@ -22,7 +22,7 @@
 \specialcomment{musterloesung}{\begin{shaded}Lösung/Hinweise: }{\end{shaded}}
 
 % Nur exluden nötig. Include automatisch.
-%\excludecomment{musterloesung}
+\excludecomment{musterloesung}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -389,7 +389,7 @@ status open
 \backslash
 newcommand{
 \backslash
-blattnr}{1337}
+blattnr}{42}
 \end_layout
 
 \begin_layout Plain Layout
@@ -492,7 +492,7 @@ blattnr}
 \backslash
 fancyhead[LE,LO]{
 \backslash
-includegraphics[height=1.2cm]{C:/Daten/Lokal/workspace/lollipop/lyx/fig/hsma.png}}
+includegraphics[height=1.2cm]{/fig/hsma.png}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2366,7 +2366,7 @@ Aufgabe: Java-Programm
 
 \begin_layout Standard
 Schreiben Sie das Java-Programm hierfür.
- Fügen Sie eine sinnvolle Fehlerbehandlung hinzu.
+ Fehlerhafte Eingaben sollen abgefangen werden.
 \end_layout
 
 \begin_layout Standard
@@ -3065,7 +3065,7 @@ Aufgabe: Java-Programm
 \end_layout
 
 \begin_layout Standard
-Fügen Sie eine sinnvolle Fehlerbehandlung hinzu.
+Fehlerhafte Eingaben sollen abgefangen werden.
 \end_layout
 
 \begin_layout Standard

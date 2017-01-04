@@ -337,7 +337,7 @@ customHeadersFooters
 \branch Wurzelziehen
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color #ffffff
 \end_branch
 \index Index
 \shortcut idx
@@ -389,7 +389,7 @@ status open
 \backslash
 newcommand{
 \backslash
-blattnr}{1337}
+blattnr}{42}
 \end_layout
 
 \begin_layout Plain Layout
@@ -819,7 +819,7 @@ Lernziele
 
 \begin_layout Standard
 \begin_inset Branch dyn-ds
-status open
+status collapsed
 
 \begin_layout Standard
 Dynamische Datenstrukturen kennenlernen
@@ -832,7 +832,7 @@ Dynamische Datenstrukturen kennenlernen
 
 \begin_layout Itemize
 \begin_inset Branch listen-bäume
-status open
+status collapsed
 
 \begin_layout Standard
 Listen und Bäume vertiefen
@@ -1811,6 +1811,10 @@ end{algorithm}
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 newpage
@@ -2362,7 +2366,7 @@ Aufgabe: Java-Programm
 
 \begin_layout Standard
 Schreiben Sie das Java-Programm hierfür.
- Fügen Sie eine sinnvolle Fehlerbehandlung hinzu.
+ Fehlerhafte Eingaben sollen abgefangen werden.
 \end_layout
 
 \begin_layout Standard
@@ -3061,7 +3065,7 @@ Aufgabe: Java-Programm
 \end_layout
 
 \begin_layout Standard
-Fügen Sie eine sinnvolle Fehlerbehandlung hinzu.
+Fehlerhafte Eingaben sollen abgefangen werden.
 \end_layout
 
 \begin_layout Standard
